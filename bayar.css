@@ -1,0 +1,57 @@
+* {
+    font-family: "Quicksand", sans-serif;
+    
+}
+
+table{
+    border: transparent;
+}
+tr, td {
+    border-collapse: collapse;
+}
+td{
+    text-align: center;
+        }
+input[type=text] {
+padding:15px;
+border:0;
+box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+border-radius:10px;
+width: 200px;
+}
+input[type=button] {
+padding:7px;
+border:0;
+color: white;
+background-color: green;
+box-shadow:0 0 30px 8px rgba(0,0,0,0.06);
+border-radius:10px;
+width: 75px;
+}
+input[type=reset] {
+padding:7px;
+border:0;
+color: white;
+background-color: red;
+box-shadow:0 0 30px 8px rgba(0,0,0,0.06);
+border-radius:10px;
+width: 75px;
+}
+select {
+padding:10px;
+border:0;
+box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+border-radius:10px;
+width: 150px;
+}
+label{
+    color: black;
+}
+.background2 {
+    background-image: url('img/utama.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    padding: 150px 0;
+  }
+  

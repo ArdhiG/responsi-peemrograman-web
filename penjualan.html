@@ -1,0 +1,117 @@
+<HTML>
+    <HEAD><TITLE>Online Shop</TITLE>
+            <link rel="stylesheet" type="text/css" href="bayar.css">
+            <link rel="stylesheet" type="text/css" href="styleUk.css">
+    <Style>
+    
+    </Style>
+    </HEAD>
+    <body>
+        <header class="warna">
+            <div class="container">
+                <ul>
+                    <li><a href="index.html">Kembali</a></li>
+                </ul>
+    
+            </div>
+        </header>
+        <main>
+        <form name ="fform">
+            <table  class="background2" zalign="center"width="100%">
+            <tr>
+                <td width="100%" colspan="2">
+                <h2 ALIGN="center">Isi Kolom bagian kiri dengan lengkap ! </h2>
+            </td>
+        </tr>
+        <tr>
+            <td width="50%">
+                
+                <pre>
+                    <label>Nama Pemesan</label>
+                    <input type="text" name="inama" placeholder="Nama Pemesan">
+                    <label>Pilih Hardware</label>
+                    <select id="hwr" name="ipilihan" size="1">
+                        <option value="BOR MESIN">BOR MESIN</option>
+                        <option value="PAKU">PAKU</option>
+                        <option value="PALU">PALU</option>
+                        <option value="GERGAJI">GERGAJI</option>
+                        <option value="TANG">TANG</option>
+                        <option value="OBENG">OBENG</option>
+                    </select>
+                    <label>Jumlah Hardware</label>
+                    <input type="text" name="ijumlah" placeholder="Jumlah Item">
+                </pre>
+                </td>
+                <td width="50">
+                    <pre>
+                    <label>Nama alat</label> 
+                    <input type="text" name="opilihan"> 
+                    <label>Harga alat</label>
+                    <input type="text" name="oharga"> 
+                    <label>Jumlah alat</label>
+                    <input type="text" name="ojumlah">
+                    </pre>
+        </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <label><h3>Total Bayar :</h3></label>
+                    <input type="text" name="osub">                  
+            </td>
+        </tr>
+        <tr>
+        <td width="50%">
+            
+            <INPUT TYPE="button" value="Hitung" onclick="hitungtotal()">
+            </td>
+        <td width="50%">
+            <INPUT TYPE="reset" value="Ulang">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="button" value="Bayar" onClick="alert('Silahkan Lakukkan Pembayaran di Alfamart atau Indomart Terdekat')">                    
+            </td>
+        </tr>
+    </table>
+    </form>
+    </main>
+    <footer>
+        <div class="container">
+            <small>Dibuat &copy; 2022 - ARDHI GUNAWAN.</small>
+        </div>
+    </footer>
+    <SCRIPT language="JavaScript">
+        function hitungtotal(){
+            var tes=document.getElementById("hwr").value;
+            var barang = (document.fform.ipilihan.value);
+            var jumlahpaket = parseFloat(document.fform.ijumlah.value);
+            var ht = 0.0;
+            var sub = 0.0; 
+            var total =0.0;
+                if (barang=="BOR MESIN"){
+                ht =800000;
+                }else if (barang=="PAKU"){
+                ht =3000000;
+                }else if (barang=="PALU"){
+                ht =3500000;
+                }else if (barang=="OBENG"){
+                ht =2000000;
+                }else if (barang=="GERGAJI"){
+                ht =1200000;
+                }else if (barang=="TANG"){
+                ht =700000;
+            
+                }
+            sub = jumlahpaket*ht;
+            total = sub; 
+            document.fform.oharga.value=eval(ht); 
+            document.fform.osub.value=eval(sub); 
+            document.fform.ojumlah.value=eval(jumlahpaket);
+            document.fform.opilihan.value=tes;         
+        }
+        
+        </SCRIPT>
+    </body>
+    </HTML>
+    

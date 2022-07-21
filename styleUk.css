@@ -1,0 +1,182 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Quicksand", sans-serif;
+    color: rgb(0, 0, 0);
+  
+  }
+  header {
+    height: 70px;
+  }
+  header h1 {
+    display: inline-block;
+    float: left;
+    padding: 15px 0px;
+    text-transform: uppercase;
+  }
+  header h1 a {
+    transition: 0.3s;
+  }
+  header h1 a:hover {
+    color: #37E6F7;
+  }
+  header ul {
+    float: right;
+  }
+  header ul li {
+    padding: 24px;
+    display: inline-block;
+  }
+  header ul li a {
+    transition: 0.3s;
+  }
+  header ul li a:hover {
+    color: #f84744;
+  }
+  a {
+    text-decoration: none;
+  }
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    
+  }
+  .container::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .size-picture{
+    width: 250px;
+  
+  }
+  .banner{
+	height: 60vh;
+	background-image: url(../img/banner.jpg);
+	background-size: cover;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+  
+  section {
+    padding: 50px 0;
+  }
+  
+  .banner h2,
+  .banner p,
+  .banner span {
+    color: rgb(0, 0, 0);
+  }
+  .banner h2 {
+    margin-bottom: 10px;
+  }
+  .banner p {
+    font-size: 18px;
+  }
+  .banner-left {
+    padding-left: 24px;
+  }
+  section h3 {
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 20px;
+    position: relative;
+  }
+  section h3::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 120px;
+    height: 1px;
+    background-color: rgb(26, 26, 26);
+    left: calc(50% - 60px);
+  }
+  section h3::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -1px;
+    width: 40px;
+    height: 4px;
+    background-color: #37E6F7;
+    left: calc(50% - 20px);
+  }
+  #about p {
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 25px;
+    margin-bottom: 15px;
+  }
+  #about, #portfolio, #pr {
+    background-color: whitesmoke ;
+  }
+  
+  .col-3 {
+      width: 33.33%;
+      box-sizing: border-box;
+      float: left;
+      text-align: center;
+  }
+  .col-4 {
+    width: 25%;
+    box-sizing: border-box;
+    padding: 5px;
+    float: left;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .col-3 h4 {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 15px;
+  }
+  footer {
+    background-color: #333;
+    padding: 50px;
+    text-align: center;
+  }
+  footer small {
+    color: #fff;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  @media (max-width: 768px) {
+    .mobile-menu {
+      display: block;
+    }
+    header ul {
+      display: none;
+    }
+    .col-4 {
+      width: 50%;
+    }
+    .col-3 {
+      width: 100%;
+    }
+  }
+  
+  .warna{
+    background-color: #37E6F7;
+    width: 100%;
+    color: rgb(255, 255, 255);
+  }
+  
+   @font-face {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/quicksand/v22/6xK-dSZaM9iE8KbpRA_LJ3z8mH9BOJvgkM0o58a-wg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  
+  
+  @media screen and (max-width:990px){
+    .counter{ margin-bottom: 40px; }
+  }
+  
